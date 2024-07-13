@@ -25,7 +25,6 @@ function App() {
           </nav>
           {/* Define Routes */}
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/photos" element={<Photos />} />
             <Route path="/ceremony" element={<Ceremony />} />
             <Route path="/party" element={<WeddingParty />} />
