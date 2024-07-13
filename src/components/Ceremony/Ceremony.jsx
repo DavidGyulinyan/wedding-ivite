@@ -1,7 +1,12 @@
 import React from "react";
+import MapOfChurch from "../Map/MapOfChurch";
 
 function Ceremony() {
-  return <div>Արարողություն</div>;
+  return (
+    <>
+      <MapOfChurch />
+    </>
+  );
 }
 
 export default Ceremony;

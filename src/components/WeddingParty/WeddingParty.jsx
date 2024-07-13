@@ -1,7 +1,12 @@
 import React from "react";
+import Map from "../Map/Map";
 
 function WeddingParty() {
-  return <div>Երեկույթ</div>;
+  return (
+    <>
+      <Map />
+    </>
+  );
 }
 
 export default WeddingParty;

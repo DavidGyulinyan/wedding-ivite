@@ -13,6 +13,9 @@ function App() {
         <div className="app">
           {/* Navigation Menu */}
           <nav className="menu">
+            <Link to="/" className="text-center">
+              Գլխավոր
+            </Link>
             <Link to="/photos" className="text-center">
               Լուսանկարներ
             </Link>
