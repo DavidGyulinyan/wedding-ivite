@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'ArmAllegro';
+    src: url('./assets/fonts/ArmAllegroU.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArmCoronet';
+    src: url('./assets/fonts/ArmCoronetU.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+
+    /* border: 1px solid red; */
+}

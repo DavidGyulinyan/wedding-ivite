@@ -1,0 +1,71 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/1720810132557.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: "ArmCoronet", "ArmAllegro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-content {
+    width: 90%;
+    border-radius: 10px;
+    color: #f0e6e6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invite {
+    font-size: 4rem;
+}
+
+.couple {
+    font-size: 1.7rem;
+}
+
+.ceremony {
+    font-size: 1.7rem;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 1.8rem;
+}
+
+@media(min-width:768px) {
+    .invite {
+        font-size: 6rem;
+    }
+
+    .couple {
+        font-size: 2.7rem;
+    }
+
+    .ceremony {
+        font-size: 2.7rem;
+    }
+
+    .conteiner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        font-size: 2.9rem;
+    }
+}
