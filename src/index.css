@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'ArmAllegro';
-    src: url('./assets/fonts/ArmAllegroU.ttf');
+    font-family: 'ArmCoronetU';
+    src: url('./assets/fonts/ArmCoronetU.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'ArmCoronet';
-    src: url('./assets/fonts/ArmCoronetU.ttf');
+    font-family: 'SHK_Dzeragir';
+    src: url('./assets/fonts/SHK_Dzeragir.otf');
     font-weight: normal;
     font-style: normal;
 }

@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Photos from "./components/Photos/Photos";
 import Ceremony from "./components/Ceremony/Ceremony";
 import WeddingParty from "./components/WeddingParty/WeddingParty";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer />
     </>
   );
 }

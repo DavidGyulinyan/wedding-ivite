@@ -50,12 +50,10 @@ const Home = () => {
     <>
       <div className="home">
         <div className="home-content">
-          <span className="invite">Հրավիրատոմս</span>
-          <span className="couple flex justify-center items-center">
-            Դավիթ Գյուլինյանի և Նունե Նազարյանի
+          <span className="couple text-center flex justify-center items-center">
+            Սիրով հրավիրում ենք Ձեզ Դավիթի և Նունեի պսակադրության արարողությանը,
+            որը տեղի կունենա
           </span>
-          <span className="ceremony">Պսակադրության արարողությանը,</span>
-          <span className="ceremony">որը տեղի կունենա</span>
           <section className="conteiner">
             <span>
               {formatTime(timeLeft.days)} {timeUnits.days}{" "}

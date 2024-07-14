@@ -7,17 +7,33 @@ import photo4 from "../../assets/images/20240712_212935.jpg";
 function Photos() {
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 px-2">
-      <div>
-        <img className="h-auto max-w-full rounded-lg" src={photo2} alt="" />
+      <div className="w-full h-64 overflow-hidden">
+        <img
+          className="w-full h-full object-cover rounded-lg"
+          src={photo2}
+          alt=""
+        />
       </div>
-      <div>
-        <img className="h-auto max-w-full rounded-lg" src={photo3} alt="" />
+      <div className="w-full h-64 overflow-hidden">
+        <img
+          className="w-full h-full object-cover rounded-lg"
+          src={photo3}
+          alt=""
+        />
       </div>
-      <div>
-        <img className="h-auto max-w-full rounded-lg" src={photo4} alt="" />
+      <div className="w-full h-64 overflow-hidden">
+        <img
+          className="w-full h-full object-cover rounded-lg"
+          src={photo4}
+          alt=""
+        />
       </div>
-      <div>
-        <img className="h-auto max-w-full rounded-lg" src={photo1} alt="" />
+      <div className="w-full h-64 overflow-hidden">
+        <img
+          className="w-full h-full object-cover rounded-lg"
+          src={photo1}
+          alt=""
+        />
       </div>
     </div>
   );
