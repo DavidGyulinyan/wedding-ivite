@@ -59,11 +59,11 @@ const Home = () => {
     <>
       <div className="home">
         <div className="home-content">
-          <span className="couple text-center flex justify-center items-center">
+          <span className="couple font-arm text-center flex justify-center items-center">
             Սիրով հրավիրում ենք Ձեզ Դավիթի և Նունեի պսակադրության արարողությանը,
             որը տեղի կունենա
           </span>
-          <section className="conteiner">
+          <section className="conteiner font-arm">
             <span>
               {formatTime(timeLeft.days)} {timeUnits.days}{" "}
             </span>
@@ -79,7 +79,7 @@ const Home = () => {
           </section>
         </div>
         <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
-          <span className="text-2xl py-3">Նոյեմբեր</span>
+          <span className="font-arm text-3xl py-3">Նոյեմբեր</span>
           <div className="grid grid-cols-7 gap-3 text-md">
             {days.map((week, weekIndex) =>
               week.map((day, dayIndex) => (
