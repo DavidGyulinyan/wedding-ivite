@@ -78,13 +78,13 @@ const Home = () => {
             </span>
           </section>
         </div>
-        <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white p-5">
-          <div className="grid grid-cols-7 gap-4 text-xl">
+        <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
+          <div className="grid grid-cols-7 gap-3 text-md">
             {days.map((week, weekIndex) =>
               week.map((day, dayIndex) => (
                 <div
                   key={weekIndex * 7 + dayIndex}
-                  className={`flex items-center justify-center w-12 h-12 rotate-1 ${
+                  className={`flex items-center justify-center w-10 h-10 rotate-1 ${
                     day === 3 ? "border-2 border-white rounded-full " : ""
                   }`}
                 >
