@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
+import img from "../../assets/images/Calendar.png";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -46,6 +47,14 @@ const Home = () => {
 
   const formatTime = (value) => String(value).padStart(2, "0");
 
+  const days = [
+    [1, 2, 3, 4, 5, 6],
+    [7, 8, 9, 10, 11, 12, 13],
+    [14, 15, 16, 17, 18, 19, 20],
+    [21, 22, 23, 24, 25, 26, 27],
+    [28, 29, 30],
+  ];
+
   return (
     <>
       <div className="home">
@@ -68,6 +77,22 @@ const Home = () => {
               {formatTime(timeLeft.seconds)} {timeUnits.seconds}{" "}
             </span>
           </section>
+        </div>
+        <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white p-5">
+          <div className="grid grid-cols-7 gap-4 text-xl">
+            {days.map((week, weekIndex) =>
+              week.map((day, dayIndex) => (
+                <div
+                  key={weekIndex * 7 + dayIndex}
+                  className={`flex items-center justify-center w-12 h-12 rotate-1 ${
+                    day === 3 ? "border-2 border-white rounded-full " : ""
+                  }`}
+                >
+                  {day}
+                </div>
+              ))
+            )}
+          </div>
         </div>
       </div>
     </>
