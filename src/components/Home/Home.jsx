@@ -79,6 +79,7 @@ const Home = () => {
           </section>
         </div>
         <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
+          <span className="text-xl">Նոյեմբեր</span>
           <div className="grid grid-cols-7 gap-3 text-md">
             {days.map((week, weekIndex) =>
               week.map((day, dayIndex) => (
