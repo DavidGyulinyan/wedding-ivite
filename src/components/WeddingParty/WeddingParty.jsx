@@ -10,10 +10,8 @@ function WeddingParty() {
         data-aos="fade-up"
         data-aos-easing="linear"
       >
-        <span className="text-2xl font-bold text-center my-2">
-          Ռեստորան Ֆելիչի
-        </span>
-        <span className="text-xl font-bold text-center">Երեկույթը 17:30</span>
+        <span className="text-2xl text-center my-2">Ռեստորան Ֆելիչի</span>
+        <span className="text-xl text-center">Երեկույթը 17:30</span>
 
         <div className="church-images px-2 py-3">
           <div className="w-full h-auto overflow-hidden">
