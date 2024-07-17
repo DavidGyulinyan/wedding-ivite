@@ -12,6 +12,13 @@ function App() {
       <Home />
       <div className="app">
         <nav className="menu">
+          <span className="font-arm text-2xl text-center flex justify-center items-center p-10">
+            Սիրելի բարեկամներ և ընկերներ, Մեր կյանքում շուտով կգա մի անմոռանալի
+            և հիասքանչ պահ: Մենք պատրաստվում ենք միավորել մեր սրտերն ու ապրել
+            մեր կյանքի ամենալուսավոր օրերից մեկը: Հրավիրում ենք Ձեզ կիսելու մեզ
+            հետ այս անմոռանալի արարողությունը՝ դարձնելով մեր օրը ավելի վառ և
+            գեղեցիկ Ձեր ներկայությամբ։
+          </span>
           <ScrollLink
             to="ceremony"
             className="text-center"

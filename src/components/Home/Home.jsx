@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import img from "../../assets/images/Calendar.png";
 
 const Home = () => {
   const calculateTimeLeft = () => {
