@@ -1,6 +1,7 @@
 import React from "react";
 import Map from "../Map/Map";
 import photo from "../../assets/images/church/photo_2024-07-14_23-54-25.jpg";
+import restourantIcon from "../../assets/icons/toasting.svg";
 
 function WeddingParty() {
   return (
@@ -11,6 +12,7 @@ function WeddingParty() {
         data-aos-easing="linear"
       >
         <span className="text-xl text-center">Երեկույթը 17:30</span>
+        <img className="w-10 h-10 my-2" src={restourantIcon} alt="" />
         <span className="text-3xl text-center my-2">Ռեստորան Ֆելիչի</span>
         <span className="text-2xl text-center">Հասցեն Բագրևանդ 110</span>
 
