@@ -59,8 +59,7 @@ const Home = () => {
       <div className="home">
         <div className="home-content">
           <span className="couple font-arm text-center flex justify-center items-center">
-            Սիրով հրավիրում ենք Ձեզ Դավիթի և Նունեի պսակադրության արարողությանը,
-            որը տեղի կունենա
+            Դավիթի և Նունեի պսակադրության արարողությունը տեղի կունենա
           </span>
           <section className="conteiner font-arm">
             <span>
