@@ -1,20 +1,11 @@
-.app {
-  position: relative;
-}
-
 .menu {
   font-family: "ArmCoronetU", "SHK_Dzeragir", sans-serif;
   font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: .8rem;
   margin: 40px 0 40px 0;
 }
 
 
 .section-map {
-  font-family: "SHK_Dzeragir", sans-serif;
-
+  font-family: "SHK_Dzeragir", "ArmCoronetU", sans-serif;
 }

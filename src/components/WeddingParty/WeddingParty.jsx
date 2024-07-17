@@ -16,7 +16,7 @@ function WeddingParty() {
         <span className="text-3xl text-center my-2">Ռեստորան Ֆելիչի</span>
         <span className="text-2xl text-center">Հասցեն Բագրևանդ 110</span>
 
-        <div className="church-images px-2 py-3">
+        <div className="mt-5 px-2 py-3">
           <div className="w-full h-auto overflow-hidden">
             <img
               className="w-full h-full object-cover rounded-lg"

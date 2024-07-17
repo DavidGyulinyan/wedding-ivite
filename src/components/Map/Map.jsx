@@ -3,7 +3,7 @@ import locationIcon from "../../assets/icons/location-pin.svg";
 
 const Map = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-10">
+    <div className="w-full flex flex-col justify-center items-center mt-10">
       <img className="w-10 h-10" src={locationIcon} alt="" />
       <span className=" mb-5">Տեղակայումը քարտեզի վրա</span>
       <iframe

@@ -22,7 +22,7 @@ function Ceremony() {
           Հասցեն Ղազար Փարպեցի 9
         </span>
 
-        <div className="church-images px-2 py-3">
+        <div className="mt-5 px-2 py-3">
           <div className="w-full h-auto overflow-hidden">
             <img
               className="w-full h-full object-cover rounded-lg"
