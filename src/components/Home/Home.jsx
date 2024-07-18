@@ -3,28 +3,20 @@ import "./Home.css";
 
 const Home = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-11-03T00:00:00Z");
+    const targetDate = new Date("2024-11-03T14:00:00");
     const now = new Date();
     const difference = targetDate - now;
-    let timeLeft = {};
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    } else {
-      timeLeft = {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-      };
+    if (difference <= 0) {
+      return null;
     }
 
-    return timeLeft;
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -41,13 +33,13 @@ const Home = () => {
     days: "օր",
     hours: "ժամ",
     minutes: "րոպե",
-    seconds: "վայրկյանից",
+    seconds: "վայրկյան",
   };
 
   const formatTime = (value) => String(value).padStart(2, "0");
 
   const days = [
-    [1, 2, 3, 4, 5, 6],
+    [" ", " ", " ", " ", 1, 2, 3, 4, 5, 6],
     [7, 8, 9, 10, 11, 12, 13],
     [14, 15, 16, 17, 18, 19, 20],
     [21, 22, 23, 24, 25, 26, 27],
@@ -58,26 +50,40 @@ const Home = () => {
     <>
       <div className="home">
         <div className="home-content">
-          <span className="couple font-arm text-center flex justify-center items-center">
-            Դավիթի և Նունեի պսակադրության արարողությունը տեղի կունենա
-          </span>
-          <section className="conteiner font-arm">
-            <span>
-              {formatTime(timeLeft.days)} {timeUnits.days}{" "}
-            </span>
-            <span>
-              {formatTime(timeLeft.hours)} {timeUnits.hours}{" "}
-            </span>
-            <span>
-              {formatTime(timeLeft.minutes)} {timeUnits.minutes}{" "}
-            </span>
-            <span>
-              {formatTime(timeLeft.seconds)} {timeUnits.seconds}{" "}
-            </span>
-          </section>
+          {timeLeft ? (
+            <>
+              <span className="couple font-arm text-center flex justify-center items-center">
+                Դավիթի և Նունեի պսակադրության արարողությունը տեղի կունենա
+              </span>
+              <section className="conteiner font-arm">
+                {timeLeft.days > 0 && (
+                  <span>
+                    {formatTime(timeLeft.days)} {timeUnits.days}{" "}
+                  </span>
+                )}
+                {timeLeft.hours > 0 && (
+                  <span>
+                    {formatTime(timeLeft.hours)} {timeUnits.hours}{" "}
+                  </span>
+                )}
+                {timeLeft.minutes > 0 && (
+                  <span>
+                    {formatTime(timeLeft.minutes)} {timeUnits.minutes}{" "}
+                  </span>
+                )}
+                <span>
+                  {formatTime(timeLeft.seconds)} {timeUnits.seconds}{" "}
+                </span>
+              </section>
+            </>
+          ) : (
+            <div className="congratulations font-arm text-center text-4xl">
+              Շնորհավորում ենք ՝ պսակադրության արարողությունը արդեն կայացել է։
+            </div>
+          )}
         </div>
         <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
-          <span className="font-arm text-3xl py-3">Նոյեմբեր</span>
+          <span className="font-arm text-3xl my-8">Նոյեմբեր</span>
           <div className="grid grid-cols-7 gap-3 text-md">
             {days.map((week, weekIndex) =>
               week.map((day, dayIndex) => (

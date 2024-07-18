@@ -11,7 +11,7 @@ function Ceremony() {
         data-aos="fade-up"
         data-aos-easing="linear"
       >
-        <span className="text-xl text-center mb-3">
+        <span className="text-2xl text-center mb-3">
           Արարողության սկիզբը 15:00
         </span>
         <img className="w-10 h-10 my-2" src={churchIcon} alt="" />
