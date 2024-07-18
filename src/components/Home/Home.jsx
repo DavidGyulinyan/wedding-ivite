@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-11-03T14:00:00");
+    const targetDate = new Date("2024-11-03T15:00:00");
     const now = new Date();
     const difference = targetDate - now;
 
