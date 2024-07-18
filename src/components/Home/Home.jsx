@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ringsIcon from "../../assets/icons/rings-love.svg";
 import "./Home.css";
 
 const Home = () => {
@@ -53,8 +54,14 @@ const Home = () => {
           {timeLeft ? (
             <>
               <span className="couple font-arm text-center flex justify-center items-center">
-                Դավիթի և Նունեի պսակադրության արարողությունը տեղի կունենա
+                Դավիթ և Նունե
               </span>
+              <img
+                src={ringsIcon}
+                className="w-20 h-20 my-6"
+                alt="Rings Icon"
+              />
+
               <section className="conteiner font-arm">
                 {timeLeft.days > 0 && (
                   <span>
