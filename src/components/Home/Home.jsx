@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ringsIcon from "../../assets/images/il_794xN.5455602734_47ls.svg";
+import oval from "../../assets/images/circle-frame-oval.svg";
 import "./Home.css";
 
 const Home = () => {
@@ -97,11 +98,22 @@ const Home = () => {
               week.map((day, dayIndex) => (
                 <div
                   key={weekIndex * 7 + dayIndex}
-                  className={`flex items-center justify-center w-10 h-10 rotate-1 ${
-                    day === 3 ? "border-2 border-white rounded-full " : ""
-                  }`}
+                  className="relative flex items-center justify-center w-10 h-10"
                 >
-                  {day}
+                  {day === 3 && (
+                    <img
+                      src={oval}
+                      className="absolute left-[.2rem] top-2 w-full h-full"
+                      alt="Oval Frame"
+                    />
+                  )}
+                  <span
+                    className={`font-arm text-2xl ${
+                      day === 3 ? "text-white" : ""
+                    }`}
+                  >
+                    {day}
+                  </span>
                 </div>
               ))
             )}
