@@ -29,7 +29,7 @@ const photos = [
 
 function Photos() {
   return (
-    <div className="xl:w-5/6 m-auto grid sm:grid-cols-1 grid-cols-2 place-items-center md:grid-cols-2 gap-4 px-2">
+    <div className="xl:w-2/3 m-auto grid sm:grid-cols-1 grid-cols-2 place-items-center md:grid-cols-2 gap-4 px-2">
       {photos.map((photo) => (
         <div
           key={photo.id}
