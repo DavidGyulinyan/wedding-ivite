@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ringsIcon from "../../assets/icons/rings-love.svg";
+import ringsIcon from "../../assets/images/il_794xN.5455602734_47ls.svg";
 import "./Home.css";
 
 const Home = () => {
@@ -58,7 +58,7 @@ const Home = () => {
               </span>
               <img
                 src={ringsIcon}
-                className="w-20 h-20 my-6"
+                className="w-44 h-44 my-6"
                 alt="Rings Icon"
               />
 
