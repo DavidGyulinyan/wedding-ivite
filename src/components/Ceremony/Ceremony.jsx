@@ -14,7 +14,11 @@ function Ceremony() {
         <span className="text-2xl text-center mb-3">
           Արարողության սկիզբը 15:00
         </span>
-        <img className="w-10 h-10 my-2" src={churchIcon} alt="" />
+        <img
+          className="w-10 h-10 my-2"
+          src={churchIcon}
+          alt="Եկեղեցի․ պատկերակը"
+        />
         <span className="text-3xl text-center my-2 px-2">
           Զորավոր Սուրբ Աստվածածին Եկեղեցի
         </span>
@@ -23,11 +27,11 @@ function Ceremony() {
         </span>
 
         <div className="mt-5 px-2 py-3">
-          <div className="w-full h-auto overflow-hidden">
+          <div className="w-full h-auto md:h-[40rem] lg:h-[45rem] xl:h-[50rem] overflow-hidden">
             <img
               className="w-full h-full object-cover rounded-lg"
               src={photo}
-              alt=""
+              alt="Եկեղեցի․ լուսանկար"
             />
           </div>
         </div>

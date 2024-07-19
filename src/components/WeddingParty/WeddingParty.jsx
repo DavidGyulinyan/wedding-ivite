@@ -12,16 +12,20 @@ function WeddingParty() {
         data-aos-easing="linear"
       >
         <span className="text-2xl text-center">Երեկույթը 17:30</span>
-        <img className="w-10 h-10 my-2" src={restourantIcon} alt="" />
+        <img
+          className="w-10 h-10 my-2"
+          src={restourantIcon}
+          alt="Ռեստորան․ պատկերակ"
+        />
         <span className="text-3xl text-center my-2">Ռեստորան Ֆելիչի</span>
         <span className="text-2xl text-center">Հասցեն Բագրևանդ 110</span>
 
         <div className="mt-5 px-2 py-3">
-          <div className="w-full h-auto overflow-hidden">
+          <div className="w-full h-auto xl:h-[45rem] overflow-hidden">
             <img
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full md:h-[35rem] lg:h-[45rem] xl:h-[50rem] object-cover rounded-lg"
               src={photo}
-              alt=""
+              alt="Ռեստորան․ լուսանկար"
             />
           </div>
         </div>
