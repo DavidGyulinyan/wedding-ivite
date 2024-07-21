@@ -5,11 +5,14 @@ import Ceremony from "./components/Ceremony/Ceremony";
 import WeddingParty from "./components/WeddingParty/WeddingParty";
 import Footer from "./components/Footer/Footer";
 import { Link as ScrollLink, Element } from "react-scroll";
+import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 
 function App() {
   return (
     <>
       <Home />
+      <MusicPlayer />
+
       <div className="app">
         <nav className="menu flex flex-col justify-center items-center">
           <span className="font-arm text-2xl lg:text-3xl xl:text-3xl text-center flex justify-center items-center p-7 lg:w-4/5 xl:w-3/5">
