@@ -50,7 +50,7 @@ const MusicPlayer = () => {
 
   return (
     <div className="font-arm text-2xl mt-10 w-full h-21 flex flex-col justify-end items-center gap-3">
-      <span>Երաժշտություն</span>
+      <span className="text-3xl">Երաժշտություն</span>
       <audio ref={audioRef} src={audio} autoPlay />
       <button onClick={togglePlay} className="p-2">
         <img
