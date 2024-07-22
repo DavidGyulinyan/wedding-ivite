@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import audio from "../../assets/audio/Bruno-Mars-Marry-You.mp3";
+import audio from "../../assets/audio/Hayko-Yerani-Srtis.mp3";
 import play from "../../assets/icons/play.svg";
 import stop from "../../assets/icons/pause.svg";
 
