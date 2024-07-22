@@ -93,7 +93,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
           <span className="font-arm text-3xl my-8">Նոյեմբեր</span>
-          <div className="grid grid-cols-7 gap-3 text-md">
+          <div className="grid grid-cols-7 gap-3 text-md mb-14">
             {days.map((week, weekIndex) =>
               week.map((day, dayIndex) => (
                 <div

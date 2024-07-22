@@ -23,7 +23,7 @@ function App() {
             Ձեզ ներկա գտնվելու մեր պսակադրության արարողությանը՝ դարձնելով օրն
             ավելի վառ և գեղեցիկ Ձեր ներկայությամբ։
           </span>
-          <div className="w-96 flex max-sm:flex-col justify-around cursor-pointer gap-5">
+          <div className="w-96 flex max-sm:flex-col justify-around cursor-pointer gap-5 py-10">
             <ScrollLink
               to="ceremony"
               className="text-center text-3xl lg:text-3xl xl:text-3xl"
