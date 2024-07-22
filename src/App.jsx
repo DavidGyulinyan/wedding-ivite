@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import { Link as ScrollLink, Element } from "react-scroll";
 import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
 import ScrollToTop from "react-scroll-to-top";
+import ScrollToTopButton from "./components/scrollToTopButton/scrollToTopButton";
 
 function App() {
   return (
@@ -53,10 +54,7 @@ function App() {
         <WeddingParty />
       </Element>
       <Footer />
-      <ScrollToTop
-        smooth
-        className="w-10 h-10 flex justify-center items-center border-opacity-5"
-      />
+      <ScrollToTopButton />
     </>
   );
 }
