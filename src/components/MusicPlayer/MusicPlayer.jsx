@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import audio from "../../assets/audio/Hayko-Yerani-Srtis.mp3";
+import audio from "../../assets/audio/L'appuntamento.mp3";
 import play from "../../assets/icons/play.svg";
 import stop from "../../assets/icons/pause.svg";
 
@@ -51,7 +51,7 @@ const MusicPlayer = () => {
   return (
     <div className="font-arm text-2xl mt-10 w-full h-21 flex flex-col justify-end items-center gap-3">
       <span className="text-3xl">Երաժշտություն</span>
-      <audio ref={audioRef} src={audio} autoPlay />
+      <audio ref={audioRef} src={audio} />
       <button onClick={togglePlay} className="p-2">
         <img
           src={isPlaying ? stop : play}
