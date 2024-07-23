@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ringsIcon from "../../assets/images/il_794xN.5455602734_47ls.svg";
 import oval from "../../assets/images/circle-frame-oval.svg";
 import "./Home.css";
+import MusicPlayer from "../MusicPlayer/MusicPlayer";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -93,7 +94,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
           <span className="font-arm text-3xl my-8">Նոյեմբեր</span>
-          <div className="grid grid-cols-7 gap-3 text-md mb-14">
+          <div className="grid grid-cols-7 gap-3 text-md mb-4">
             {days.map((week, weekIndex) =>
               week.map((day, dayIndex) => (
                 <div
@@ -119,6 +120,7 @@ const Home = () => {
             )}
           </div>
         </div>
+        <MusicPlayer />
       </div>
     </>
   );

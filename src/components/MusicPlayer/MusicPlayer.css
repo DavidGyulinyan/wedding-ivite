@@ -2,10 +2,11 @@
     width: 50%;
     height: 2px;
     background-color: #ccc;
+    margin-bottom: 35px;
 }
 
 .progress-bar {
     height: 2px;
-    background-color: black;
+    background-color: #ffff;
     width: 0%;
 }
