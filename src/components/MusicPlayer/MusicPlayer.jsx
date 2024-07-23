@@ -1,52 +1,43 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import audio from "../../assets/audio/L'appuntamento.mp3";
 import play from "../../assets/icons/play.svg";
 import stop from "../../assets/icons/pause.svg";
+import "./MusicPlayer.css";
 
 const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
   const audioRef = useRef(null);
 
-  useEffect(() => {
-    const handleUserInteraction = () => {
-      if (audioRef.current && !audioRef.current.playing) {
-        audioRef.current.play().catch((error) => {
-          console.error("Playback failed:", error);
-          setIsPlaying(false);
-        });
-      }
-      window.removeEventListener("click", handleUserInteraction);
-    };
-
-    if (audioRef.current) {
+  const togglePlay = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
       audioRef.current.play().catch((error) => {
         console.error("Playback failed:", error);
-        setIsPlaying(false);
-        window.addEventListener("click", handleUserInteraction);
       });
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleTimeUpdate = () => {
+    const currentProgress =
+      (audioRef.current.currentTime / audioRef.current.duration) * 100;
+    setProgress(currentProgress);
+  };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.addEventListener("timeupdate", handleTimeUpdate);
     }
 
     return () => {
-      window.removeEventListener("click", handleUserInteraction);
+      if (audio) {
+        audio.removeEventListener("timeupdate", handleTimeUpdate);
+      }
     };
   }, []);
-
-  useEffect(() => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.play().catch((error) => {
-          console.error("Playback failed:", error);
-          setIsPlaying(false);
-        });
-      } else {
-        audioRef.current.pause();
-      }
-    }
-  }, [isPlaying]);
-
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
 
   return (
     <div className="font-arm text-2xl mt-10 w-full h-21 flex flex-col justify-end items-center gap-3">
@@ -59,6 +50,9 @@ const MusicPlayer = () => {
           className="w-14 h-14"
         />
       </button>
+      <div className="progress-container">
+        <div className="progress-bar" style={{ width: `${progress}%` }} />
+      </div>
     </div>
   );
 };

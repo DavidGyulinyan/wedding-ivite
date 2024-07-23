@@ -7,10 +7,13 @@ import WeddingParty from "./components/WeddingParty/WeddingParty";
 import Footer from "./components/Footer/Footer";
 import { Link as ScrollLink, Element } from "react-scroll";
 import MusicPlayer from "./components/MusicPlayer/MusicPlayer";
-import ScrollToTop from "react-scroll-to-top";
 import ScrollToTopButton from "./components/scrollToTopButton/scrollToTopButton";
 
 function App() {
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <Home />
@@ -54,7 +57,7 @@ function App() {
         <WeddingParty />
       </Element>
       <Footer />
-      <ScrollToTopButton />
+      <ScrollToTopButton onClick={handleScrollToTop} />
     </>
   );
 }

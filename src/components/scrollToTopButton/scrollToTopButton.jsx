@@ -3,9 +3,14 @@ import ScrollToTop from "react-scroll-to-top";
 import { FaArrowUp } from "react-icons/fa";
 import "./scrollToTopButton.css";
 
-const ScrollToTopButton = () => {
+const ScrollToTopButton = ({ onClick }) => {
   return (
-    <ScrollToTop smooth component={<CustomArrow />} className="scroll-to-top" />
+    <ScrollToTop
+      smooth
+      component={<CustomArrow />}
+      className="scroll-to-top"
+      onClick={onClick}
+    />
   );
 };
 
