@@ -40,7 +40,7 @@ const MusicPlayer = () => {
   }, []);
 
   return (
-    <div className="font-arm text-2xl text-white mt-10 w-full h-21 flex flex-col justify-end items-center gap-2">
+    <div className="font-arm text-2xl text-white w-full h-[9rem] flex flex-col justify-end items-center gap-2">
       <span className="text-3xl">Երաժշտություն</span>
       <audio ref={audioRef} src={audio} />
       <button onClick={togglePlay} className="pt-2">
