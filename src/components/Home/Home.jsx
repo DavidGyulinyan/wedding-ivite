@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ringsIcon from "../../assets/images/il_794xN.5455602734_47ls.svg";
+import arrowdown from "../../assets/icons/down-arrow.svg"
 import oval from "../../assets/images/circle-frame-oval.svg";
 import "./Home.css";
 import MusicPlayer from "../MusicPlayer/MusicPlayer";
@@ -49,6 +50,17 @@ const Home = () => {
     [28, 29, 30],
   ];
 
+  window.addEventListener('scroll', function() {
+    const arrow = document.querySelector('.arrowdown');
+    
+    if (window.scrollY > 2) {
+        arrow.classList.add('hidden');
+    } else {
+        arrow.classList.remove('hidden');
+    }
+});
+
+
   return (
     <>
       <div className="home">
@@ -92,7 +104,7 @@ const Home = () => {
             </div>
           )}
         </div>
-        <div className="flex flex-col items-center justify-center min-h-[23rem] bg-transparent text-white px-1">
+        <div className="flex flex-col items-center justify-center min-h-[21rem] bg-transparent text-white px-1">
           <span className="font-arm text-3xl my-4">Նոյեմբեր</span>
           <div className="grid grid-cols-7 gap-3 text-md mb-4">
             {days.map((week, weekIndex) =>
@@ -109,9 +121,8 @@ const Home = () => {
                     />
                   )}
                   <span
-                    className={`font-arm text-2xl ${
-                      day === 3 ? "text-white" : ""
-                    }`}
+                    className={`font-arm text-2xl ${day === 3 ? "text-white" : ""
+                      }`}
                   >
                     {day}
                   </span>
@@ -119,6 +130,9 @@ const Home = () => {
               ))
             )}
           </div>
+        </div>
+        <div className="arrowdown-wrapper w-30 mt-0 mx-5 my-10 text-white flex justify-center items-center">
+          <img className="arrowdown w-10 h-10" src={arrowdown} alt="arrow down icon" />
         </div>
         <MusicPlayer />
       </div>

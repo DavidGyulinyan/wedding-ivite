@@ -62,3 +62,28 @@
         font-size: 2.9rem;
     }
 }
+
+.arrowdown {
+    position: relative; /* Allows top to animate */
+    animation: arrowdown 2s infinite ease; /* 2-second interval */
+}
+
+@keyframes arrowdown {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    50% {
+        top: 3px; /* Subtle movement */
+        opacity: 0.3;
+    }
+    100% {
+        top: 6px;
+        opacity: 1;
+    }
+}
+
+.arrowdown.hidden {
+    opacity: 0;
+}
+
