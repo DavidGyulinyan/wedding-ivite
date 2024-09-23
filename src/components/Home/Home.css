@@ -70,15 +70,12 @@
 
 @keyframes arrowdown {
     0% {
-        top: 0;
         opacity: 1;
     }
     50% {
-        top: 3px; /* Subtle movement */
         opacity: 0.3;
     }
     100% {
-        top: 6px;
         opacity: 1;
     }
 }
