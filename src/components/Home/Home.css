@@ -64,8 +64,8 @@
 }
 
 .arrowdown {
-    position: relative; /* Allows top to animate */
-    animation: arrowdown 2s infinite ease; /* 2-second interval */
+    position: relative;
+    animation: arrowdown 2s infinite ease;
 }
 
 @keyframes arrowdown {
