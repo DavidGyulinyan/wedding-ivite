@@ -1,6 +1,6 @@
 import React from "react";
 import Map from "../Map/Map";
-import photo from "../../assets/images/church/XXXL-1.webp";
+import photo from "../../assets/images/church/Task_a2d6e9a294a06730.jpg";
 import restourantIcon from "../../assets/icons/toasting.svg";
 
 function WeddingParty() {
