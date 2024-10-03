@@ -1,6 +1,6 @@
 import React from "react";
 import MapOfChurch from "../Map/MapOfChurch";
-import photo from "../../assets/images/church/Task_cc998515c857a36f.jpg";
+import photo from "../../assets/images/church/photo_2024-07-14_23-46-27.jpg";
 import churchIcon from "../../assets/icons/church.svg";
 
 function Ceremony() {
