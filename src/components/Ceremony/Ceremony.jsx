@@ -12,7 +12,7 @@ function Ceremony() {
         data-aos-easing="linear"
       >
         <span className="text-2xl text-center mb-3">
-          Արարողության սկիզբը 15:00
+          Արարողության սկիզբը 14:45
         </span>
         <img
           className="w-10 h-10 my-2"
